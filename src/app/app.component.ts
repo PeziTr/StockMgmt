@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  moduleId: module.id,
+  selector: 'ng-app',
+ templateUrl: 'app.template.html' 
+ // template: `<h1>{{title}}</h1><ng-app></ng-app>`
 })
+
 export class AppComponent {
-  title = 'app';
+  appName: string = "Stock MG";
 }
