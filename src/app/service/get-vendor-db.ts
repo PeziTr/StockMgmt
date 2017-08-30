@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions } from '@angular/http';
 
 @Injectable()
-export class MongoVendorService {
+export class GetVendorDb {
     headers = new Headers({
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
