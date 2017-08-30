@@ -1,0 +1,19 @@
+ <div class="container">
+  <h3>{{title}}</h3>
+  <form class="form-inline" [formGroup]="categoryDetails" (ngSubmit)="postCategoryData()">
+
+    <div class="form-group">
+      <label>Enter Category: </label>
+      <textarea  formControlName="categoryName" class="form-control " placeholder="Add Category here"></textarea>
+    </div>
+
+    <div><h6><i>For multiple category, seperate it with comma "," or by new line</i> </h6></div>
+
+    <input type="submit" class="btn btn-primary btn-sm">
+  </form>
+
+</div> 
+
+<hr><hr>
+
+ <app-add-sub-category><app-add-sub-category> 

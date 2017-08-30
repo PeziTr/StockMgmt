@@ -1,0 +1,28 @@
+<div class="container">
+  <h3>{{title}}</h3>
+  <form class="form-inline" [formGroup]="subCategoryDetails" (ngSubmit)="postSubCategoryData()">
+
+    <div class="form-group">
+      <label>Select Category: </label>
+      <select formControlName="categoryName" class="form-control" ngModel name  ="categoryName" >
+        <option *ngFor="let category of categoryObj">{{category.categoryName}} </option>
+           
+      </select>
+
+
+      <label>Enter Sub-Category: </label>
+      <textarea formControlName="subCategoryName" class="form-control " placeholder="Add Sub-Category here"></textarea>
+    </div>
+
+    <button class="btn btn-primary btn-xs glyphicon glyphicon-plus" (click)="addSub()"></button>
+
+    <div>
+      <h6><i>For multiple sub-category, enter in new line</i> </h6>
+    </div>
+    
+    
+
+    <input type="submit" class="btn btn-primary btn-sm">
+  </form>
+
+</div>
